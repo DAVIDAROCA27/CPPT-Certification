@@ -104,12 +104,13 @@ Haciendo estas máquinas, teniendo una buena base y habiendo completado el módu
 - [https://github.com/ant0sec/Methodology-eCPPT](https://github.com/ant0sec/Methodology-eCPPT)
 
 
-# English
-Review - eCPPTv3 INE Guide
+#English
+
+## Review - eCPPTv3 INE Guide
 
 Hello there. This will be a small guide with advice on how to approach the eCPPTv3 from INE.
 
-My opinion:
+### My opinion:
 
 First of all, I don't think it's a complicated exam, but you need a solid foundation and to know what you're doing. I consider the learning journey itself more important than the certification, as the certification will simply reflect the knowledge you've acquired.
 
@@ -117,7 +118,7 @@ It's not worth buying the $600 voucher with access to INE's training. I also don
 
 These guys usually release discounts every 3-4 months. In my case, I pinned the INE tab in my browser and checked it every day for several weeks.
 
-My experience:
+### My experience:
 
 I've been in cybersecurity for just over a year, studying in my spare time while working. What I achieved could probably be done in much less time with proper optimization and a good roadmap. I've always studied on my own using HackTheBox and videos found on YouTube, but I believe that the content on the HackTheBox platform is largely responsible for where I am today.
 
@@ -127,76 +128,70 @@ So, studying on my own, doing the HackTheBox paths, and getting the premium subs
 
 That means 4 months passed between the eJPT and the eCPPT, for various reasons, but you could likely make the jump in 1-2 months.
 
-Resources:
+### Resources:
 
-HackTheBox Academy:
-https://academy.hackthebox.com/module/details/143
+**HackTheBox Academy:**  
+https://academy.hackthebox.com/module/details/143  
 It's worth paying for the module and going all in.
 
-HackTheBox Labs:
-https://app.hackthebox.com/
+**HackTheBox Labs:**  
+https://app.hackthebox.com/  
 It's worth paying for VIP for a couple of months and going all in.
 
-These are the machines I've done:
+### Machines I've done:
 
-HACKMYVM
-DC01
-DC02
-DC03
-DC04
+#### HACKMYVM
+- DC01
+- DC02
+- DC03
+- DC04
 
-HACK THE BOX
-MANAGER
-ACTIVE
-MONTEVERDE
-RESOLUTE
-SAUNA
-FOREST
-HOSPITAL
-INTELLIGENCE
-CICADA
-HOSPITAL
-HEIST
-ADMINISTRATOR
-RETURN
-TIMELAPSE
-JEEVES
-CERTIFIED
-JAB
-STREAMIO
+#### HACK THE BOX
+- MANAGER
+- ACTIVE
+- MONTEVERDE
+- RESOLUTE
+- SAUNA
+- FOREST
+- HOSPITAL
+- INTELLIGENCE
+- CICADA
+- HOSPITAL
+- HEIST
+- ADMINISTRATOR
+- RETURN
+- TIMELAPSE
+- JEEVES
+- CERTIFIED
+- JAB
+- STREAMIO
 
 The HACKMYVM ones are completely free.
 
 By doing these machines, having a solid foundation, and having completed the HackTheBox module, you will be more than prepared.
 
-Things to keep in mind:
+### Things to keep in mind:
 
-Read the questions very, very carefully and structure them. The questions are disordered; they don't follow a specific sequence, machine order, or anything like that. Reading and understanding them completely will save you a lot of time and effort. They will practically guide you through the path and the entry vectors.
+- **Read the questions very, very carefully and structure them.** The questions are disordered; they don't follow a specific sequence, machine order, or anything like that. Reading and understanding them completely will save you a lot of time and effort. They will practically guide you through the path and the entry vectors.
 
-Having good notes and a clear structure for your attack processes will be crucial. Here, you need to try to be as efficient as possible and conserve the maximum amount of energy during the exam. Being clear on this will save you a lot of time. Elaborating on this point: you have several machines in the environment, so maintaining good focus is key—meaning, don't constantly jump from one to another or go off on tangents.
+- **Having good notes and a clear structure for your attack processes will be crucial.** Here, you need to try to be as efficient as possible and conserve the maximum amount of energy during the exam. Being clear on this will save you a lot of time. Elaborating on this point: you have several machines in the environment, so maintaining good focus is key—meaning, don't constantly jump from one to another or go off on tangents.
 
-It's practically a brute-force exam. As I mentioned, the exam has a significant brute-force component. Read the questions well and be clear on this point. In my case, I couldn't find the entry vectors and was overcomplicating things.
+- **It's practically a brute-force exam.** As I mentioned, the exam has a significant brute-force component. Read the questions well and be clear on this point. In my case, I couldn't find the entry vectors and was overcomplicating things.
 
-DO NOT USE THE WORDLISTS FROM THE LETTER OF ENGAGEMENT. These are the ones that work best, along with rockyou in some instances:
+**DO NOT USE THE WORDLISTS FROM THE LETTER OF ENGAGEMENT.** These are the ones that work best, along with rockyou in some instances:
+- `/usr/share/seclists/Passwords/months.txt`
+- `/usr/share/seclists/Passwords/seasons.txt`
+- `/usr/share/seclists/Passwords/xato-net-10-million-passwords-1000000.txt`
 
-/usr/share/seclists/Passwords/months.txt
+- **It's an AD exam, but you can pass without becoming DOMAIN ADMIN.** As I said, this is true, but even so, don't get overconfident. Try to answer all the questions and give it 100%. Don't get complacent, or it might backfire during the exam.
 
-/usr/share/seclists/Passwords/seasons.txt
+- **The lab environment can be faulty.** Since the exam is still new, it can be somewhat unstable. Sometimes the dynamic flags are not injected correctly into the exam environment, leading you to search for something that isn't on the machines. For example, I encountered a question asking me to find a specific user on a machine, but the user didn't exist on any machine until I reset the lab. Be aware that these instabilities can occur.
 
-/usr/share/seclists/Passwords/xato-net-10-million-passwords-1000000.txt
+- **You cannot use `locate`.** You have to use `find`. Most tools are available, but not necessarily where you might expect or with the name you think.
 
-It's an AD exam, but you can pass without becoming DOMAIN ADMIN. As I said, this is true, but even so, don't get overconfident. Try to answer all the questions and give it 100%. Don't get complacent, or it might backfire during the exam.
+- **Use Metasploit.**
 
-The lab environment can be faulty. Since the exam is still new, it can be somewhat unstable. Sometimes the dynamic flags are not injected correctly into the exam environment, leading you to search for something that isn't on the machines. For example, I encountered a question asking me to find a specific user on a machine, but the user didn't exist on any machine until I reset the lab. Be aware that these instabilities can occur.
-
-You cannot use locate. You have to use find. Most tools are available, but not necessarily where you might expect or with the name you think.
-
-Use Metasploit.
-
-Other resources:
-
-https://github.com/0xMat10/eCPPT_Prep
-
-https://dragkob.notion.site/ecpptv3-dragkob
-
-https://github.com/ant0sec/Methodology-eCPPT
+### Other resources:
+- https://github.com/0xMat10/eCPPT_Prep
+- https://dragkob.notion.site/ecpptv3-dragkob
+- https://github.com/ant0sec/Methodology-eCPPT
