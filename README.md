@@ -105,7 +105,6 @@ Haciendo estas máquinas, teniendo una buena base y habiendo completado el módu
 
 
 # English
-
 Review - eCPPTv3 INE Guide
 
 Hello there. This will be a small guide with advice on how to approach the eCPPTv3 from INE.
