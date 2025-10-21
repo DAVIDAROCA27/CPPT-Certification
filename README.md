@@ -73,9 +73,9 @@ Haciendo estas máquinas, teniendo una buena base y habiendo completado el módu
 
 - **Leer muy muy bien las preguntas y dejarlas estructuradas.** Las preguntas están desordenadas, no van por orden, por máquina ni nada por el estilo. Leerlas completamente y entenderlas te va a ahorrar mucho tiempo y esfuerzo. Son las que te van a guiar por el camino y los vectores de entrada prácticamente.
     
-- **Tener unos buenos apuntes y una estructura clara en los procesos de ataque** va a ser crucial. Aquí hay que tratar de ser lo más eficientes y ahorrar la máxima cantidad de energía durante el examen. Tener esto claro te va a ahorrar mucho tiempo. Tratando este punto más en profundidad: tienes varias máquinas en el entorno, tener un foco bueno es decir, no pasar de una a la otra constantemente ni irse por las ramas.
+- **Tener unos buenos apuntes y una estructura clara en los procesos de ataque** va a ser crucial. Aquí hay que tratar de ser lo más eficientes y ahorrar la máxima cantidad de energía durante el examen. Tener esto claro te va a ahorrar mucho tiempo. Tratando este punto más en profundidad: tienes varias máquinas en el entorno, tener un foco bueno es decir, no pasar de una a la otra constantemente ni irse por las ramas.Tener también en cuenta que cada vez que reiniciais el entorno todo lo que haya en las máquinas se borrará por eso lo menciono también.
     
-- **Es un examen prácticamente de fuerza bruta.** Como menciono, el examen tiene una gran parte de fuerza bruta. Leer bien las preguntas y tener claro este punto. En mi caso, no encontraba los vectores de entrada y estaba pensando en cosas más complicadas de lo que realmente era.
+- **Es un examen prácticamente de fuerza bruta.** Como menciono, el examen tiene una gran parte de fuerza bruta. Leer bien las preguntas y tener claro este punto. En mi caso, no encontraba los vectores de entrada y estaba pensando en cosas más complicadas de lo que realmente era.Volviendo a arriba las preguntas te dirán exactamente a qué usuarios hacer fuerza bruta.
     
 
 **NO USAR LAS WORDLISTS DEL LETTER OF ENGAGEMENT.** Estas son las que mejor funcionan junto con el rockyou en algunas ocasiones:
@@ -85,8 +85,12 @@ Haciendo estas máquinas, teniendo una buena base y habiendo completado el módu
 - `/usr/share/seclists/Passwords/seasons.txt`
     
 - `/usr/share/seclists/Passwords/xato-net-10-million-passwords-1000000.txt`
+
+- **Hay mucho cracking de hashes**
+Esto no es un problema ya que las wordlist son las que he mencionado tú siempre que te encuentres un hash a crackear utiliza las 4 wordlist que mencionó y 100% vas a poder crackear todos los hashes que te encuentres.Yo personalmente iría de `seasons>months>rockyou>xato` en ese orden es decir si no lo encuentra con la primera wordlist pasaría a la siguiente así hasta encontrar la password.
+
     
-- **Es un examen de AD pero puedes aprobar sin llegar a ser DOMAIN ADMIN.** Como digo, esto es real, pero aun así no hay que confiarse. Intentar contestar todas las preguntas y ir al 100%. No os confiéis o os puede pasar una mala jugada en el examen.
+- **Es un examen de AD pero puedes aprobar sin llegar a ser DOMAIN ADMIN.** Como digo, esto es real, pero aun así no hay que confiarse. Intentar contestar todas las preguntas y ir al 100%. No os confiéis o os puede pasar una mala jugada en el examen.La escalada de privilegios no es complicada utilizar msfconsole con su comando básico con meterpreter. Y leer bien las preguntas.
     
 - **El entorno funciona mal.** Como el examen todavía es nuevo, puede ser un poco inestable. A veces las flags dinámicas no se inyectan correctamente en el entorno de examen, lo que hace que busques algo que no está en las máquinas. Por ejemplo, me pasó que una pregunta pedía encontrar un usuario específico en una máquina, pero el usuario no existía en ninguna hasta que reinicié el lab. Ten en cuenta que pueden haber estas inestabilidades.
     
